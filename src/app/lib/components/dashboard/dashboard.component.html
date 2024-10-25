@@ -1,0 +1,18 @@
+<div>
+  @if (data.length) {
+    <ul>
+      @for (module of data;track $index) {
+        <li>
+          <p>{{ module.name }}</p>
+          <ol>
+            @for (lesson of module.items;track $index) {
+              <li>
+                <p>{{ lesson.name }}</p>
+              </li>
+            }
+          </ol>
+        </li>
+      }
+    </ul>
+  }
+</div>
