@@ -1,18 +1,19 @@
 <div>
   @if (data.length) {
-    <ul>
+    <mat-list>
       @for (module of data;track $index) {
-        <li>
-          <p>{{ module.name }}</p>
-          <ol>
+        <mat-list-item lines="100">
+          <span matListItemTitle>{{ module.name }}</span>
+          <mat-selection-list #list matListItemLine>
             @for (lesson of module.items;track $index) {
-              <li>
-                <p>{{ lesson.name }}</p>
-              </li>
+              <mat-list-option>{{lesson.name}}</mat-list-option>
             }
-          </ol>
-        </li>
+          </mat-selection-list>
+          <p>
+            Пройдено уроков: {{list.selectedOptions.selected.length}}
+          </p> 
+        </mat-list-item>
       }
-    </ul>
+    </mat-list>
   }
 </div>
