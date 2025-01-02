@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BisRoutingModule } from './bis-routing.module';
+
+import { AngRoutingModule } from './ang-routing.module';
+
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    BisRoutingModule
+    AngRoutingModule
   ]
 })
-export class BisModule { }
+export class AngModule { }

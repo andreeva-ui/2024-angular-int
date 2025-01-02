@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  margin: 50px 80px;
+}
+
+.btn {
+  width: 250px;
+  height: 150px;
+  background-color: lightblue;
+  border: 1px solid grey;
+  margin: 0 10px 10px 0;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: pink;
+    transition: 0.5s;
+  }
+}

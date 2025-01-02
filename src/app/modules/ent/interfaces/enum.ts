@@ -22,4 +22,5 @@ export enum PageUrlEnum {
   bis = 'bis',
   game = 'game',
   ent = 'ent',
+  ang = 'ang',
 }
