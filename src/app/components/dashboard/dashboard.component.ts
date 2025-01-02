@@ -4,7 +4,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatTreeModule} from '@angular/material/tree';
 
 
-import { data } from '../../constants';
+import { DATA } from '../../interfaces/constants';
 
 @Component({
   selector: 'app-dashboard',
@@ -14,5 +14,5 @@ import { data } from '../../constants';
   styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent {
-  data = data;
+  data = DATA;
 }
