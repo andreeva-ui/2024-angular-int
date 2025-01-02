@@ -19,7 +19,7 @@ export enum teachers {
 }
 
 export enum PageUrlEnum {
-  products = 'products',
-  myProducts = 'my-products',
+  bis = 'bis',
   game = 'game',
+  ent = 'ent',
 }
