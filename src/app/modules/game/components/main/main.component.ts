@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { GAME_365 } from '../../interfaces/constants';
 
-
-
 @Component({
-  selector: 'app-main',
+  selector: 'game-main',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './main.component.html',

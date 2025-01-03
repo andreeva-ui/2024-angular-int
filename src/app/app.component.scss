@@ -1,22 +1,70 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 34px;
+  height: 34px;
+  background-color: fuchsia;
+
+  &:hover {
+    background-color: blueviolet;
+    transition: 0.5s;
+  }
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    border: 1px solid grey;
+    padding: 4px 16px;
+    cursor: pointer;
+    margin-right: 10px;
+
+    &:hover {
+      background-color: lightgreen;
+      transition: 0.5s;
+    }
+  }
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+
+  &__item {
+    margin-bottom: 8px;
+  }
+}
+
 .container {
   display: flex;
   margin: 50px 80px;
 }
 
-.btn {
-  width: 250px;
-  height: 150px;
-  background-color: lightblue;
-  border: 1px solid grey;
-  margin: 0 10px 10px 0;
-  cursor: pointer;
+// .btn {
+//   width: 250px;
+//   height: 150px;
+//   background-color: lightblue;
+//   border: 1px solid grey;
+//   margin: 0 10px 10px 0;
+//   cursor: pointer;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
 
-  &:hover {
-    background-color: pink;
-    transition: 0.5s;
-  }
-}
+//   &:hover {
+//     background-color: lightgreen;
+//     transition: 0.5s;
+//   }
+// }

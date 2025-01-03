@@ -1,8 +1,37 @@
-<div class="container">
+<header class="header">
+  <div class="icon"></div>
+  <div class="menu">
+    <div class="menu__container">
+      <div class="menu__item" [routerLink]="urls.game">365 Game</div>
+      <div class="submenu">
+        <div class="submenu__item menu__item" [routerLink]="'game/form'">Форма заполнения</div>
+      </div>
+    </div>
+    <div class="menu__container">
+      <div class="menu__item" [routerLink]="urls.ang">Angular</div>
+      <div class="submenu">
+      </div>
+    </div>
+    <div class="menu__container">
+      <div class="menu__item" [routerLink]="urls.ent">Entrepreneurship</div>
+      <div class="submenu">
+      </div>
+    </div>
+    <div class="menu__container">
+      <div class="menu__item" [routerLink]="urls.bis">Bis</div>
+      <div class="submenu">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- <div class="sidebar">
   <div class="btn" [routerLink]="urls.game">365 Game</div>
   <div class="btn" [routerLink]="urls.ang">Angular</div>
   <div class="btn" [routerLink]="urls.ent">Entrepreneurship</div>
   <div class="btn" [routerLink]="urls.bis">Bis</div>
-</div>
+</div> -->
 
-<router-outlet />
+<div class="container">
+  <router-outlet />
+</div>
